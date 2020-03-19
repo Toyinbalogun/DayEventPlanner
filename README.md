@@ -5,3 +5,7 @@ Create a simple calendar application that allows the user to save events for eac
 # Demo Screenshot
 # Start Page
 ![Start Page](Images/img1.png)
+
+# Saved Events Page
+![Saved Events Page](Images/img2.png)
+
