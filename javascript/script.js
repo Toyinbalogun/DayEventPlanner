@@ -37,28 +37,30 @@ function getEvent(time){
 //***********************************************************************************//
 //**************************** EVENT HANDLERS ***************************************//
 //***********************************************************************************//
-$('.currentTime').each(function(){
-    let eventTime = getTimeValin24hrs($(this).text())
-    let curEvent = getEvent($(this).text())
+$(document).ready(function(){
+    $('.currentTime').each(function(){
+        let eventTime = getTimeValin24hrs($(this).text())
+        let curEvent = getEvent($(this).text())
 
-    if(currentHour > eventTime){
-        $(this).next('.currentEvent').addClass('past')
-    }
-    else if (currentHour < eventTime){
-        $(this).next('.currentEvent').addClass('future')
-    }
-    else{
-        $(this).next('.currentEvent').addClass('present')
-    }
+        if(currentHour > eventTime){
+            $(this).next('.currentEvent').addClass('past')
+        }
+        else if (currentHour < eventTime){
+            $(this).next('.currentEvent').addClass('future')
+        }
+        else{
+            $(this).next('.currentEvent').addClass('present')
+        }
 
-    if(curEvent != null){
-        $(this).siblings('.currentEvent').first().text(curEvent)
-    }
-})
+        if(curEvent != null){
+            $(this).siblings(".currentEvent").first().text(curEvent)
+        }
+    })
 
-$(document).on('click','.saveBtn', function(e){
-    e.preventDefault()
-    let curTime = $(this).siblings('.currentTime').first().text()
-    let getEvent = $(this).siblings('.currentEvent').first().val()
-    saveEvent(curTime, getEvent)
+    $(document).on('click','.saveBtn', function(e){
+        e.preventDefault()
+        let curTime = $(this).siblings('.currentTime').first().text()
+        let getEvent = $(this).siblings('.currentEvent').first().val()
+        saveEvent(curTime, getEvent)
+    })
 })
