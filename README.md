@@ -1,6 +1,11 @@
 # DayEventPlanner
 
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+Created a simple calendar application that allows the user to save events for each hour of the day. This app runs in the browser and features dynamically updated HTML and CSS. Powered by jQuery.
+
+# Link to Webpage
+
+https://toyinbalogun.github.io/DayEventPlanner/
+
 
 # Demo Screenshot
 # Start Page
@@ -8,4 +13,6 @@ Create a simple calendar application that allows the user to save events for eac
 
 # Saved Events Page
 ![Saved Events Page](Images/img2.png)
+
+
 
